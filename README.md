@@ -114,3 +114,32 @@ Functional hackathon prototype.
 ## Project Name
 
 **NariCare — Your Health. Your Care. Your Companion.**
+
+---
+
+## 📸 Project Screenshots
+
+Here are screenshots showcasing the main features of NariCare.
+
+### 1. Dashboard
+![NariCare Dashboard](screenshots/dashboard.jpeg)
+
+### 2. Menstrual Cycle Tracker
+![Menstrual Cycle Tracker](screenshots/cycleTracker.jpeg)
+
+### 3. Symptom Tracker
+![Symptom Tracker](screenshots/synptomTracker.jpeg)
+
+### 4. Health Insights & Patterns
+![Health Insights and Patterns](screenshots/insightsPatterns.jpeg)
+
+### 5. Doctor Report
+![Doctor Report](screenshots/doctorReport.jpeg)
+
+### 6. Health Awareness
+![Health Awareness](screenshots/healthAwareness.jpeg)
+
+### 7. Settings
+![Settings](screenshots/setting.jpeg)
+
+---
