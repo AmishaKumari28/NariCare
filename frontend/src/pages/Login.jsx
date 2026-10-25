@@ -1,4 +1,4 @@
-
+import { API_BASE } from "../services/api";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+        `${API_BASE}/auth/login`,
         {
           method: "POST",
           headers: {

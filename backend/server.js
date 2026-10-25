@@ -10,7 +10,10 @@ const cycleRoutes = require("./routes/cycleRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: [
+    "http://localhost:5173",
+    "https://nari-care.vercel.app"
+  ]
 }));
 
 app.use(express.json());

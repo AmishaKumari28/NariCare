@@ -1,4 +1,4 @@
-
+import { API_BASE } from "../services/api";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -30,7 +30,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/register",
+        `${API_BASE}/auth/register`,
         {
           method: "POST",
           headers: {
