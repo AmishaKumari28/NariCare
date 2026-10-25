@@ -1,0 +1,497 @@
+
+/* SAKHI HEALTH — HEALTH AWARENESS */
+
+.sakhi-awareness-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #302d49;
+}
+
+/* HEADER */
+
+.sakhi-awareness-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.sakhi-awareness-header h1 {
+  margin: 0 0 8px;
+  color: #302d49;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.sakhi-awareness-header p {
+  margin: 0;
+  color: #9691a5;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.sakhi-awareness-header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #f2eafb;
+  color: #9975d4;
+}
+
+/* SEARCH */
+
+.sakhi-awareness-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 49px;
+  padding: 0 17px;
+  margin-bottom: 22px;
+  border: 1px solid #eae6f1;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #a298b4;
+}
+
+.sakhi-awareness-search:focus-within {
+  border-color: #a58cda;
+  box-shadow: 0 0 0 3px rgba(155, 121, 215, 0.1);
+}
+
+.sakhi-awareness-search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #403b56;
+  font: inherit;
+  font-size: 12px;
+}
+
+.sakhi-awareness-search input::placeholder {
+  color: #aaa5b6;
+}
+
+/* CATEGORY FILTERS */
+
+.sakhi-awareness-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.sakhi-awareness-filter {
+  padding: 10px 16px;
+  border: 1px solid #ece8f3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #777188;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sakhi-awareness-filter:hover {
+  background: #f5f0fc;
+  color: #8d69c9;
+}
+
+.sakhi-awareness-filter.active {
+  border-color: transparent;
+  background: linear-gradient(110deg, #7954c9, #a080df);
+  color: #ffffff;
+}
+
+/* SECTION HEADING */
+
+.sakhi-awareness-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 19px;
+}
+
+.sakhi-awareness-section-heading h2 {
+  margin: 0 0 6px;
+  color: #332e4d;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.sakhi-awareness-section-heading p {
+  margin: 0;
+  color: #a09bac;
+  font-size: 11px;
+}
+
+.sakhi-awareness-section-heading > span {
+  color: #9374c7;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* ARTICLE GRID */
+
+.sakhi-awareness-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.sakhi-awareness-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #eeeaf2;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 3px 12px rgba(50, 40, 85, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sakhi-awareness-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(50, 40, 85, 0.08);
+}
+
+/* PASTEL ART PANELS */
+
+.sakhi-awareness-card-art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 145px;
+  overflow: hidden;
+}
+
+.sakhi-awareness-card-art.pink {
+  background: #fceaf2;
+  color: #d785ab;
+}
+
+.sakhi-awareness-card-art.mint {
+  background: #e5f7ef;
+  color: #66baa4;
+}
+
+.sakhi-awareness-card-art.lavender {
+  background: #eeeafd;
+  color: #997cd5;
+}
+
+.sakhi-awareness-card-art.blue {
+  background: #e9f2ff;
+  color: #7ca2db;
+}
+
+.sakhi-awareness-card-art.peach {
+  background: #fff0e5;
+  color: #e2a06c;
+}
+
+.sakhi-awareness-art-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.sakhi-awareness-art-sparkle {
+  position: absolute;
+  top: 25px;
+  right: 24px;
+  opacity: 0.55;
+}
+
+/* ARTICLE CONTENT */
+
+.sakhi-awareness-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 19px;
+}
+
+.sakhi-awareness-category {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.sakhi-awareness-category.pink {
+  background: #fce8f1;
+  color: #cb7ba0;
+}
+
+.sakhi-awareness-category.mint {
+  background: #e4f6ee;
+  color: #55a98e;
+}
+
+.sakhi-awareness-category.lavender {
+  background: #f0eafd;
+  color: #8b6cc5;
+}
+
+.sakhi-awareness-category.blue {
+  background: #e9f2ff;
+  color: #7299d0;
+}
+
+.sakhi-awareness-category.peach {
+  background: #fff0e4;
+  color: #cc9664;
+}
+
+.sakhi-awareness-card-content h3 {
+  margin: 15px 0 9px;
+  color: #37314f;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.sakhi-awareness-card-content > p {
+  flex: 1;
+  margin: 0 0 18px;
+  color: #898399;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.sakhi-awareness-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #8a65c9;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sakhi-awareness-read-more:hover {
+  color: #6844ad;
+}
+
+/* NO RESULTS */
+
+.sakhi-awareness-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 240px;
+  padding: 25px;
+  border: 1px solid #eeeaf2;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #aaa3b8;
+  text-align: center;
+}
+
+.sakhi-awareness-empty h3,
+.sakhi-awareness-empty p {
+  margin: 0;
+}
+
+.sakhi-awareness-clear {
+  margin-top: 7px;
+  padding: 10px 17px;
+  border: none;
+  border-radius: 8px;
+  background: #eee7fb;
+  color: #7954c9;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* HEALTH NOTICE */
+
+.sakhi-awareness-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 19px;
+  margin-top: 26px;
+  border: 1px solid #e8e1f6;
+  border-radius: 10px;
+  background: #f5f0fc;
+}
+
+.sakhi-awareness-notice-icon {
+  color: #8f6bc8;
+  flex-shrink: 0;
+}
+
+.sakhi-awareness-notice p {
+  margin: 0;
+  color: #756c8d;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* ARTICLE POPUP */
+
+.sakhi-awareness-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(35, 27, 58, 0.55);
+}
+
+.sakhi-awareness-modal {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 15px 45px rgba(30, 20, 55, 0.18);
+}
+
+.sakhi-awareness-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: #f5f1fa;
+  color: #85759e;
+  cursor: pointer;
+}
+
+.sakhi-awareness-modal h2 {
+  margin: 18px 0 15px;
+  padding-right: 15px;
+  color: #342d50;
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+.sakhi-awareness-modal-content {
+  color: #6d667d;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* TRUSTED SOURCE LINK */
+
+.sakhi-awareness-source {
+  margin-top: 16px;
+  color: #777188;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.sakhi-awareness-source a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #7954c9;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.sakhi-awareness-source a:hover {
+  color: #5e3ba8;
+}
+
+/* MODAL NOTICE */
+
+.sakhi-awareness-modal-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px;
+  margin: 22px 0;
+  border-radius: 8px;
+  background: #f5f0fc;
+  color: #7d7096;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.sakhi-awareness-modal-notice svg {
+  flex-shrink: 0;
+}
+
+.sakhi-awareness-modal-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(110deg, #7954c9, #a080df);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1100px) {
+  .sakhi-awareness-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .sakhi-awareness-header h1 {
+    font-size: 23px;
+  }
+
+  .sakhi-awareness-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sakhi-awareness-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sakhi-awareness-modal {
+    padding: 23px;
+  }
+
+  .sakhi-awareness-filters {
+    gap: 8px;
+  }
+
+  .sakhi-awareness-filter {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+}

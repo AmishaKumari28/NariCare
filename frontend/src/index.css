@@ -1,0 +1,17 @@
+
+html {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8f7fc;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}

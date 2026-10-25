@@ -1,0 +1,459 @@
+
+/* Sakhi Health — Menstrual Cycle Tracker */
+
+.sakhi-cycle-page {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  color: #302d49;
+}
+
+.sakhi-cycle-header {
+  margin-bottom: 25px;
+}
+
+.sakhi-cycle-header h1 {
+  margin: 0 0 8px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #302d49;
+}
+
+.sakhi-cycle-header p {
+  margin: 0;
+  color: #9691a5;
+  font-size: 13px;
+}
+
+/* Main three-column layout */
+
+.sakhi-cycle-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.25fr 0.95fr;
+  align-items: start;
+  gap: 18px;
+}
+
+.sakhi-cycle-panel,
+.sakhi-cycle-current {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #eceaf2;
+  border-radius: 11px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(40, 35, 80, 0.035);
+}
+
+/* Current Cycle card */
+
+.sakhi-cycle-current {
+  background: #f0ebfc;
+  border-color: #eee5fb;
+}
+
+.sakhi-cycle-current-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 19px;
+}
+
+.sakhi-cycle-current-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #e6d9fa;
+  color: #956bce;
+}
+
+.sakhi-cycle-current-heading h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sakhi-cycle-day {
+  font-size: 25px;
+  font-weight: 700;
+  color: #382b5e;
+}
+
+.sakhi-cycle-day-subtitle {
+  min-height: 28px;
+  margin: 7px 0 14px;
+  color: #8c83a4;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.sakhi-cycle-progress-track {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #ded2f4;
+}
+
+.sakhi-cycle-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7953c9, #ba83e7);
+  transition: width 0.3s ease;
+}
+
+.sakhi-cycle-details {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin: 23px 0;
+}
+
+.sakhi-cycle-details > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sakhi-cycle-details span {
+  color: #817993;
+  font-size: 11px;
+}
+
+.sakhi-cycle-details strong {
+  color: #45395f;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.sakhi-cycle-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(110deg, #7853c9, #a07de0);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sakhi-cycle-primary-button:hover {
+  opacity: 0.92;
+}
+
+.sakhi-cycle-primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Calendar */
+
+.sakhi-calendar-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.sakhi-calendar-heading h2 {
+  margin: 0;
+  color: #342e50;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sakhi-calendar-heading button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  border: none;
+  border-radius: 7px;
+  background: #f5f2fa;
+  color: #82739f;
+  cursor: pointer;
+}
+
+.sakhi-calendar-heading button:hover {
+  background: #eae1f9;
+}
+
+.sakhi-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px 3px;
+}
+
+.sakhi-calendar-weekday {
+  padding-bottom: 10px;
+  color: #a09aac;
+  font-size: 10px;
+  text-align: center;
+}
+
+.sakhi-calendar-date,
+.sakhi-calendar-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  min-width: 0;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.sakhi-calendar-date {
+  color: #625b76;
+}
+
+.sakhi-calendar-date.period {
+  background: #f5a6c6;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sakhi-calendar-date.today {
+  background: #9372d4;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 2px 7px rgba(127, 88, 198, 0.25);
+}
+
+.sakhi-calendar-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid #f0edf5;
+}
+
+.sakhi-calendar-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #817b92;
+  font-size: 10px;
+}
+
+.sakhi-legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.sakhi-legend-dot.period {
+  background: #f5a6c6;
+}
+
+.sakhi-legend-dot.today {
+  background: #9372d4;
+}
+
+/* Cycle History */
+
+.sakhi-cycle-history-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sakhi-cycle-history-heading h2 {
+  margin: 0;
+  color: #342e50;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sakhi-cycle-history-heading span {
+  color: #9877cf;
+  font-size: 11px;
+}
+
+.sakhi-cycle-history-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sakhi-cycle-history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px 0;
+  border-bottom: 1px solid #f0edf5;
+}
+
+.sakhi-cycle-history-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sakhi-cycle-history-item strong {
+  color: #4c445f;
+  font-size: 12px;
+}
+
+.sakhi-cycle-history-item span {
+  color: #8c859b;
+  font-size: 11px;
+}
+
+.sakhi-cycle-history-item small {
+  color: #aaa4b6;
+  font-size: 10px;
+}
+
+.sakhi-cycle-delete {
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: #c2a6b5;
+  cursor: pointer;
+}
+
+.sakhi-cycle-delete:hover {
+  color: #d35c80;
+}
+
+.sakhi-cycle-delete:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sakhi-cycle-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  color: #aaa3b7;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Add period form */
+
+.sakhi-cycle-form-panel {
+  margin-top: 22px;
+}
+
+.sakhi-cycle-form-panel h2 {
+  margin: 0 0 8px;
+  color: #342e50;
+  font-size: 17px;
+}
+
+.sakhi-cycle-form-panel > p {
+  margin: 0 0 20px;
+  color: #9690a4;
+  font-size: 12px;
+}
+
+.sakhi-cycle-form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.sakhi-cycle-form-fields > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sakhi-cycle-form-fields label {
+  color: #514b66;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sakhi-cycle-form-fields input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e7e1ee;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #433b58;
+  font: inherit;
+  font-size: 12px;
+}
+
+.sakhi-cycle-form-panel .sakhi-cycle-primary-button {
+  max-width: 220px;
+}
+
+/* Messages and disclaimer */
+
+.sakhi-cycle-alert {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 15px;
+  margin-bottom: 18px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.sakhi-cycle-alert.error {
+  background: #fde8ec;
+  color: #a63d59;
+}
+
+.sakhi-cycle-alert.success {
+  background: #e6f7ee;
+  color: #378c66;
+}
+
+.sakhi-cycle-disclaimer {
+  margin: 18px 0;
+  color: #a19aaa;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1150px) {
+  .sakhi-cycle-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sakhi-cycle-history {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .sakhi-cycle-header h1 {
+    font-size: 23px;
+  }
+
+  .sakhi-cycle-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sakhi-cycle-history {
+    grid-column: auto;
+  }
+
+  .sakhi-cycle-form-fields {
+    grid-template-columns: 1fr;
+  }
+}

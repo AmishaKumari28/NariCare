@@ -1,0 +1,419 @@
+
+/* Sakhi Health — Symptom Tracker */
+
+.sakhi-symptom-page {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  color: #302d49;
+}
+
+.sakhi-symptom-header {
+  margin-bottom: 25px;
+}
+
+.sakhi-symptom-header h1 {
+  margin: 0 0 8px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #302d49;
+}
+
+.sakhi-symptom-header p {
+  margin: 0;
+  color: #9390a3;
+  font-size: 13px;
+}
+
+/* Two-column layout */
+
+.sakhi-symptom-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
+}
+
+.sakhi-symptom-panel {
+  min-width: 0;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #eceaf3;
+  border-radius: 11px;
+  box-shadow: 0 2px 10px rgba(48, 37, 93, 0.04);
+}
+
+.sakhi-symptom-panel-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.sakhi-symptom-panel-title h2 {
+  margin: 0 0 5px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #302d49;
+}
+
+.sakhi-symptom-panel-title p {
+  margin: 0;
+  font-size: 11px;
+  color: #9b97ac;
+}
+
+.sakhi-symptom-title-icon {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+.sakhi-symptom-title-icon.purple {
+  background: #f0eafd;
+  color: #906acb;
+}
+
+.sakhi-symptom-title-icon.pink {
+  background: #fce9f1;
+  color: #d787a7;
+}
+
+/* Form */
+
+.sakhi-symptom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sakhi-symptom-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.sakhi-symptom-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #514b66;
+}
+
+.sakhi-symptom-field input:not([type="range"]),
+.sakhi-symptom-field select,
+.sakhi-symptom-field textarea {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #e8e5ef;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #403a58;
+  font-family: inherit;
+  font-size: 12px;
+  outline: none;
+}
+
+.sakhi-symptom-field input:focus,
+.sakhi-symptom-field select:focus,
+.sakhi-symptom-field textarea:focus {
+  border-color: #a48bdb;
+  box-shadow: 0 0 0 3px rgba(151, 120, 211, 0.1);
+}
+
+.sakhi-symptom-field textarea {
+  min-height: 110px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.sakhi-symptom-field input::placeholder,
+.sakhi-symptom-field textarea::placeholder {
+  color: #b4afc1;
+}
+
+.sakhi-date-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 12px;
+  border: 1px solid #e8e5ef;
+  border-radius: 8px;
+  color: #9c8cbf;
+}
+
+.sakhi-date-input-wrap input {
+  flex: 1;
+  min-width: 0;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Severity slider */
+
+.sakhi-severity-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sakhi-severity-value {
+  color: #8865c8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sakhi-severity-slider {
+  width: 100%;
+  margin: 8px 0 0;
+  accent-color: #9874d7;
+  cursor: pointer;
+}
+
+.sakhi-severity-scale {
+  display: flex;
+  justify-content: space-between;
+  color: #a6a1b2;
+  font-size: 11px;
+}
+
+.sakhi-current-severity {
+  margin: 0;
+  color: #9b79cb;
+  font-size: 11px;
+}
+
+.sakhi-optional {
+  color: #aaa5b8;
+  font-weight: 400;
+}
+
+.sakhi-save-symptom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(
+    110deg,
+    #7853cb,
+    #a07de0
+  );
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sakhi-save-symptom:hover {
+  background: linear-gradient(
+    110deg,
+    #6943bf,
+    #916bda
+  );
+}
+
+.sakhi-save-symptom:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Symptom history */
+
+.sakhi-symptom-history {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.sakhi-symptom-history-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #efedf4;
+  border-radius: 10px;
+}
+
+.sakhi-history-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+.sakhi-history-icon.pink {
+  background: #fce9f1;
+  color: #d77fa7;
+}
+
+.sakhi-history-icon.lavender {
+  background: #efeafd;
+  color: #9474d4;
+}
+
+.sakhi-history-icon.mint {
+  background: #e5f7f0;
+  color: #5ebda4;
+}
+
+.sakhi-history-icon.blue {
+  background: #e9f2ff;
+  color: #79a2df;
+}
+
+.sakhi-history-icon.peach {
+  background: #fff0e5;
+  color: #e3a06e;
+}
+
+.sakhi-history-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.sakhi-history-name-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 8px;
+}
+
+.sakhi-history-name-row h3 {
+  margin: 0;
+  color: #39344f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sakhi-history-severity {
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.sakhi-history-severity.mild {
+  background: #e5f7ed;
+  color: #49a47a;
+}
+
+.sakhi-history-severity.moderate {
+  background: #fff2de;
+  color: #ce9850;
+}
+
+.sakhi-history-severity.severe {
+  background: #fde9ec;
+  color: #d8798c;
+}
+
+.sakhi-history-date {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  color: #a19bac;
+  font-size: 11px;
+}
+
+.sakhi-history-notes {
+  margin: 10px 0 0;
+  color: #827d92;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.sakhi-history-delete {
+  padding: 6px;
+  border: none;
+  background: transparent;
+  color: #c7a5b2;
+  cursor: pointer;
+}
+
+.sakhi-history-delete:hover {
+  color: #d66083;
+}
+
+.sakhi-history-delete:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sakhi-symptom-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 250px;
+  text-align: center;
+  color: #a49eb5;
+  font-size: 13px;
+}
+
+.sakhi-symptom-empty p {
+  margin: 0;
+}
+
+.sakhi-symptom-empty span {
+  font-size: 11px;
+}
+
+/* Messages */
+
+.sakhi-symptom-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  margin-bottom: 18px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.sakhi-symptom-alert.error {
+  background: #fde9eb;
+  color: #aa4159;
+}
+
+.sakhi-symptom-alert.success {
+  background: #e5f7ed;
+  color: #348e67;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .sakhi-symptom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .sakhi-symptom-header h1 {
+    font-size: 23px;
+  }
+
+  .sakhi-symptom-panel {
+    padding: 18px;
+  }
+
+  .sakhi-symptom-history-item {
+    padding: 12px;
+  }
+}

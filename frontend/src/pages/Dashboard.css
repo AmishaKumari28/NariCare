@@ -1,0 +1,457 @@
+
+/* ======================================
+   SAKHI HEALTH 2.0 — DASHBOARD
+   Reference-inspired pastel layout
+   ====================================== */
+
+.sakhi-dashboard {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  color: #292744;
+}
+
+/* Welcome section */
+
+.sakhi-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.sakhi-dashboard-header h1 {
+  margin: 0 0 8px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #292744;
+}
+
+.sakhi-dashboard-header p {
+  margin: 0;
+  color: #8b899f;
+  font-size: 13px;
+}
+
+.sakhi-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid #e8e2f5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #7957bb;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sakhi-refresh-btn:hover {
+  background: #f5f0ff;
+}
+
+.sakhi-refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Statistics cards */
+
+.sakhi-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.sakhi-stat-card {
+  min-width: 0;
+  min-height: 145px;
+  padding: 20px;
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.sakhi-stat-card.pink {
+  background: #fceaf2;
+}
+
+.sakhi-stat-card.mint {
+  background: #e7f7f1;
+}
+
+.sakhi-stat-card.lavender {
+  background: #eeeafd;
+}
+
+.sakhi-stat-card.blue {
+  background: #e9f2ff;
+}
+
+.sakhi-stat-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.sakhi-stat-label {
+  color: #69657d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sakhi-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sakhi-stat-card.pink .sakhi-stat-icon {
+  color: #d77da7;
+}
+
+.sakhi-stat-card.mint .sakhi-stat-icon {
+  color: #55b9a2;
+}
+
+.sakhi-stat-card.lavender .sakhi-stat-icon {
+  color: #9679d8;
+}
+
+.sakhi-stat-card.blue .sakhi-stat-icon {
+  color: #739fdf;
+}
+
+.sakhi-stat-card h2 {
+  margin: 0 0 7px;
+  color: #292744;
+  font-size: 27px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.sakhi-stat-card p {
+  margin: 0;
+  color: #858298;
+  font-size: 11px;
+}
+
+/* Shared panels */
+
+.sakhi-panel {
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #eceaf2;
+  border-radius: 11px;
+  box-shadow: 0 2px 10px rgba(40, 35, 80, 0.035);
+}
+
+.sakhi-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.sakhi-panel-heading h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #302d4b;
+}
+
+.sakhi-panel-heading p {
+  margin: 0;
+  font-size: 11px;
+  color: #9793a7;
+}
+
+.sakhi-panel-heading a {
+  color: #8866c9;
+  font-size: 11px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Chart + activity layout */
+
+.sakhi-dashboard-main-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.sakhi-chart-container {
+  width: 100%;
+  height: 260px;
+}
+
+.sakhi-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  color: #9b97aa;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Recent activity */
+
+.sakhi-activity-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sakhi-activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #f0eef5;
+}
+
+.sakhi-activity-dot {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #bd9be8;
+}
+
+.sakhi-activity-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.sakhi-activity-info strong {
+  font-size: 12px;
+  font-weight: 600;
+  color: #37334e;
+}
+
+.sakhi-activity-info span {
+  color: #a29dad;
+  font-size: 11px;
+}
+
+.sakhi-severity-badge {
+  padding: 6px 9px;
+  border-radius: 7px;
+  background: #f0eafd;
+  color: #815bbf;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.sakhi-recent-footer {
+  margin-top: 18px;
+}
+
+.sakhi-recent-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #8a65c9;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Wellness banner */
+
+.sakhi-wellness-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  border: 1px solid #f1e9fb;
+  border-radius: 11px;
+  background: linear-gradient(
+    100deg,
+    #fdf0f6 0%,
+    #f5edff 55%,
+    #f0f4ff 100%
+  );
+}
+
+.sakhi-wellness-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #b17cd6;
+}
+
+.sakhi-wellness-text {
+  flex: 1;
+}
+
+.sakhi-wellness-text h3 {
+  margin: 0 0 7px;
+  font-size: 16px;
+  color: #3d345b;
+}
+
+.sakhi-wellness-text p {
+  margin: 0;
+  color: #77718e;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.sakhi-period-estimate {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 9px !important;
+  flex-wrap: wrap;
+}
+
+.sakhi-wellness-sparkle {
+  color: #d0b3eb;
+  flex-shrink: 0;
+}
+
+/* Quick actions */
+
+.sakhi-quick-actions {
+  padding: 2px 0 10px;
+}
+
+.sakhi-quick-heading h2 {
+  margin: 0 0 6px;
+  color: #302d4b;
+  font-size: 17px;
+}
+
+.sakhi-quick-heading p {
+  margin: 0;
+  color: #9793a7;
+  font-size: 12px;
+}
+
+.sakhi-quick-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 18px;
+}
+
+.sakhi-action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 175px;
+  padding: 13px 18px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.sakhi-action-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.93;
+}
+
+.sakhi-action-button.purple {
+  background: linear-gradient(
+    110deg,
+    #7854c9,
+    #9c7cde
+  );
+}
+
+.sakhi-action-button.teal {
+  background: linear-gradient(
+    110deg,
+    #52b7b2,
+    #78d0c8
+  );
+}
+
+/* Error + disclaimer */
+
+.sakhi-dashboard-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  background: #fee9eb;
+  color: #a22d46;
+  font-size: 13px;
+}
+
+.sakhi-dashboard-disclaimer {
+  margin: 15px 0 0;
+  color: #aaa6b5;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+
+@media (max-width: 1100px) {
+  .sakhi-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sakhi-dashboard-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .sakhi-dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sakhi-dashboard-header h1 {
+    font-size: 23px;
+  }
+
+  .sakhi-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sakhi-wellness-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sakhi-wellness-sparkle {
+    display: none;
+  }
+
+  .sakhi-quick-buttons {
+    flex-direction: column;
+  }
+
+  .sakhi-action-button {
+    width: 100%;
+  }
+}
+
